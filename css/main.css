@@ -1,0 +1,246 @@
+*/
+/* Variable */
+:root{
+/* var: Font */
+--fontSize: 14px ;
+--fontHead: 'Noto Sans', sans-serif ;
+--fontBody: 'Noto Sans', sans-serif ;
+--fontBody-alt: 'Fira Sans', sans-serif ;
+--fontCode: 'Fira Mono', sans-serif ;
+--head-H1: 2rem ;
+--head-H2: 1.8rem ;
+--head-H3: 1.7rem ;
+--head-H4: 1.6rem ;
+--head-H5: 1.5rem ;
+--head-H6: 1.4rem ;
+--head-fontWg: 400 ;
+}
+.nB{
+/* var: Light-mode */
+--lightLink: #3740ff ;
+--lightC: #0e2045 ;
+--lightC-alt: #0e2045cc ; /* cc mean's opacity 80% */
+--lightBg: #fffdfc ;
+--lightBg-alt: #f9f9fb ;
+--lightBg-sec: #f5f3f2 ;
+--lightBg-pop: rgb(14 20 27 / 30%) ;
+--lightBd-color: #e4e3e1 ;
+/* var: Dark-mode */
+--darkLink: #8775f5 ;
+--darkC: #d9e2f0 ;
+--darkC-alt: #d9e2f0B3 ;  /* B3 mean's opacity 70% */
+--darkBg: #22262d ;
+--darkBg-alt: #2d3138 ;
+--darkBg-sec: #161c24 ;
+--darkBg-pop: rgb(14 20 27 / 90%) ;
+--darkBd-color: #35393f ;
+/* var: Theme */
+--themeLink: var(--lightLink) ;
+--themeC: var(--lightC) ;
+--themeC-alt: var(--lightC-alt) ;
+--themeBg: var(--lightBg) ;
+--themeBg-alt: var(--lightBg-alt) ;
+--themeBg-sec: var(--lightBg-sec) ;
+--themeBg-pop: var(--lightBg-pop) ;
+--themeBd-color: var(--lightBd-color) ;
+/* var: Basic, button, input */
+--vHeight: 100vh ;
+--selectC: #fffdfc ;
+--selectBg: var(--themeLink) ;
+--placeHolder: var(--themeC-alt) ;
+--buttonC: #fffdfc ;
+--buttonBg: #3740ff ;
+--buttonBd-line: 1px ;
+--buttonBd-color: #e4e3e1 ;
+--buttonBd-radius: 4px ;
+--button-maxWidth: 320px ;
+--inputC: currentColor ;
+--inputBg: var(--themeBg) ;
+--inputBd-line: 1px ;
+--inputBd-color: var(--themeBd-color) ;
+--inputBd-radius: 4px ;
+/* var: Icons */
+--iconWidth: 35px ;
+--iconHeight: 35px ;
+/* var: Pop-up */
+--closeHeight-phone: 60px ;
+/* var: Header */
+--headerText-after: '' ;
+--headerWidth-expand: var(--sideWidth-expand) ;
+--headerHeight: 65px ;
+--headerHeight-min: -65px ;
+--headerHeight-phone: 65px ;
+--header-font: 1.143em ;
+--header-fontWg: 500 ;
+--headerC: #0e2045 ;
+--headerBg: #fffdfc ;
+--headerBd-line: 1px ;
+--headerBd-radiusBL: 0px ;
+--headerBd-radiusBR: 0px ;
+--headerBd-color: #e4e3e1 ;
+--headerLogo-maxWidth: 160px ;
+--headerLogo-maxHeight: 50px ;
+/* var: Sidenav */
+--sideWidth: 75px ;
+--sideWidth-collapse: var(--sideWidth) ;
+--sideWidth-expand: 230px ;
+--sideWidth-max: 480px ;
+--sideMargin-phone: 0px ;
+--sideC: #0e2045 ;
+--sideBg: #fffdfc ;
+--sideBd-line: 1px ;
+--sideBd-radiusTL: 0px ;
+--sideBd-radiusTR: 0px ;
+--sideBd-radiusBR: 0px ;
+--sideBd-radiusBL: 0px ;
+--sideBd-color: #e4e3e1 ;
+/* var: Sidebar */
+--sidebarWidth: 280px ;
+--sidebarPadding: 0px ;
+--sidebarC: #0e2045 ;
+--sidebarBg: #fffdfc ;
+--sidebarBd-line: 0px ;
+--sidebarBd-radius: 0px ;
+--sidebarBd-color: #e4e3e1 ;
+/* var: Content */
+--content-maxWidth: 1300px ;
+--contentPost-maxWidth: 780px ;
+--contentPage-maxWidth: 820px ;
+--contentPop-maxWidth: 550px ;
+--contentPadding: 22px ;
+--contentPadding-minus: -22px ;
+--contentPadding-box: 15px ;
+--contentSpace: 40px ;
+--contentC: #0e2045 ;
+--contentBg: #fffdfc ;
+--contentBg-alt: #f9f9fb ;
+--contentBg-sec: #f5f3f2 ;
+--contentBd-line: 1px ;
+--contentBd-radius: 4px ;
+--contentBd-radiusA: 10px ;
+--contentBd-color: #e4e3e1 ;
+/* var: Footer */
+--footerC: #0e2045 ;
+--footerBg: #fffdfc ;
+--footerBd-line: 1px ;
+--footerBd-radiusTL: 0px ;
+--footerBd-radiusTR: 0px ;
+--footerBd-color: #e4e3e1 ;
+/* var: Post style */
+--postPadding: 0px ;
+--postPadding-phone: 0px ;
+--postPadding-content: 0px ;
+--postC: #0e2045 ;
+--postBg: #fffdfc ;
+--postBd-line: 0px ;
+--postBd-radius: 0px ;
+--postBd-color: #e4e3e1 ;
+--postBs-color: transparent ;
+--postBs-hoverColor: transparent ;
+/* var: Post font */
+--postTitle-font: 2.6rem ;
+--postTitle-fontPhone: 2rem ;
+--postTitle-fontWg: 400 ;
+--postTitle-fontItems: 1.2em ;
+--postTitle-fontItemsPhone: 1.1em ;
+--postDescription-font: 1.13rem ;
+--postDescription-fontPhone: 1.072rem ;
+--postBody-font: 1.143rem ;
+--postBody-fontPhone: 1.072rem ;
+/* var: Post typo */
+--postBreak: 3em ;
+--postImageBd-radius: 2px;
+--lineHeight: 1.7 ;
+--lineSpacing: 1.8em ;
+--tableBg-color: rgb(246 246 246 / 80%) ;
+/* var: Post thumbnail */
+--thumbnailRatio: 56.25% ; /* According to aspect-ratio 16:9 (divide 9 by 16 = 0.5625) */
+--thumbnailRatio-box: 100% ;
+/* var: Post syntax */
+--synC: #2f3337 ;
+--synBg: #f8f9fa ;
+--synOrange: #b75501 ;
+--synBlue: #015692 ;
+--synGreen: #54790d ;
+--synRed: #f15a5a ;
+--synGray: #656e77 ;
+--synGold: #72621d ;
+--synPurple: #803378 ;
+--synBd-line: 1px ;
+--synBd-radius: 4px ;
+--synBd-color: #d2d3d7 ;
+/* var: Post component */
+--noteAfter: '\002A'  ;
+--warnAfter: '\0021' ;
+--noteC: #272eb5 ;
+--noteBg: #e8f0fe ;
+--warnC: #e51661 ;
+--warnBg: #fce8e8 ; /*#fef5fa*/
+--stepC: #3740ff ;
+--stepHover: #fffdfc ;
+/* var: Widget */
+--widgetTitle-font: 1.072rem ;
+--widgetTitle-fontWg: 400 ;
+--widgetTitle-afterD: inline-block ;
+--widgetTitle-afterWd: 10px ;
+--widgetTitle-afterC: var(--themeBd-color) ;
+--widgetTitle-space: 20px ;
+/* var: Widget notify */
+--notifHeight: 55px ;
+--notifLink: #3740ff ;
+--notifC: #272eb5 ;
+--notifBg: #e8f0fe ;
+/* var: Widget slider */
+--sliderBd-radius: 4px ;
+--sliderRatio: 43.75% ;
+/* var: Widget featuredPosts */
+--thumbnailSize: 300px ;
+/* var: Widget mobileMenu */
+--mobileHeight: 60px ;
+--mobileMargin: 0px ;
+--mobileC: #0e2045 ;
+--mobileBg: #fffdfc ;
+--mobileBd-line: 0px ;
+--mobileBd-radiusTL: 0px ;
+--mobileBd-radiusTR: 0px ;
+--mobileBd-radiusBR: 0px ;
+--mobileBd-radiusBL: 0px ;
+--mobileBd-color: #e4e3e1 ;
+/* var: Widget ToC */
+--tocWidth: 280px ;
+--tocWidth-minus: -280px ;
+--tocMargin: 0px ;
+--tocC: #0e2045 ;
+--tocBg: #fffdfc ;
+--tocBd-line: 1px ;
+--tocBd-radiusTL: 0px ;
+--tocBd-radiusTR: 0px ;
+--tocBd-radiusBR: 0px ;
+--tocBd-radiusBL: 0px ;
+--tocBd-color: #e4e3e1 ;
+/* var: Transition */
+--tDuration: .1s ease ;
+--tShowHide: opacity var(--tDuration), visibility var(--tDuration) ;
+/* var: Bookmark */
+--addBookmark: 'Save' ;
+--removeBookmark: 'Saved' ;
+--bookmarkTextLenght: 90px ;
+/* var: Custom text */
+--free: 'Free!' ;
+--new: 'New!' ;
+--breadcrumbs: '\005C' ;
+--noImage: 'Null' ;
+--labelComa: 'and' ;
+--closeButton: 'Close' ;
+--pageNext: 'Next' ;
+--pagePrev: 'Back' ;
+--latestUpdate: '\21BB' ;
+--reply: 'Reply' ;
+--replies: 'Write a reply...' ;
+--readtimeBefore: '\00B7' ;
+--readtimeAfter: 'min read' ;
+--copyLink: 'or copy link' ;
+--copied: 'Copied!' ;
+--tableToc: 'Contents' ;
+}
+
